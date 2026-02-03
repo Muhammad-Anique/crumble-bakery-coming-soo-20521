@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crumble Bakery - Artisanal baked goods crafted with love. Coming Soon! Sign up for launch notifications.">
+    <meta name="keywords" content="bakery, artisanal, baked goods, fresh bread, pastries, coming soon">
+    <meta name="author" content="Crumble Bakery">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Crumble Bakery - Coming Soon">
+    <meta property="og:description" content="Artisanal baked goods crafted with love. Sign up for our launch notifications!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crumblebakery.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Crumble Bakery - Coming Soon">
+    <meta name="twitter:description" content="Artisanal baked goods crafted with love. Sign up for our launch notifications!">
+    
+    <title>Crumble Bakery - Coming Soon</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader">
+            <div class="bread-loader">
+                <i class="fas fa-bread-slice"></i>
+            </div>
+            <p>Preparing something delicious...</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-content" class="main-content">
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <i class="fas fa-cookie-bite"></i>
+                    <span>Crumble Bakery</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <main class="hero" id="hero">
+            <div class="hero-background">
+                <div class="floating-elements">
+                    <div class="floating-element" data-speed="0.5"><i class="fas fa-cookie"></i></div>
+                    <div class="floating-element" data-speed="0.3"><i class="fas fa-birthday-cake"></i></div>
+                    <div class="floating-element" data-speed="0.7"><i class="fas fa-bread-slice"></i></div>
+                    <div class="floating-element" data-speed="0.4"><i class="fas fa-muffin"></i></div>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Something Sweet</span>
+                            <span class="title-line">is Coming</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Artisanal baked goods crafted with love, using the finest ingredients. 
+                            Get ready for a delightful experience that will satisfy your sweetest cravings.
+                        </p>
+                        
+                        <!-- Countdown Timer -->
+                        <div class="countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">00</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">00</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">00</span>
+                                <span class="countdown-label">Minutes</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">00</span>
+                                <span class="countdown-label">Seconds</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Email Signup Form -->
+                    <div class="signup-section">
+                        <div class="signup-card">
+                            <h2>Be the First to Know</h2>
+                            <p>Join our mailing list and get notified when we launch, plus receive exclusive offers!</p>
+                            
+                            <form class="signup-form" id="emailForm" novalidate>
+                                <div class="form-group">
+                                    <div class="input-container">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input 
+                                            type="email" 
+                                            id="email" 
+                                            name="email" 
+                                            placeholder="Enter your email address"
+                                            class="email-input"
+                                            required
+                                            autocomplete="email"
+                                        >
+                                    </div>
+                                    <div class="error-message" id="emailError"></div>
+                                </div>
+                                
+                                <button type="submit" class="submit-btn" id="submitBtn">
+                                    <span class="btn-text">Notify Me</span>
+                                    <span class="btn-loading">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                    </span>
+                                </button>
+                                
+                                <div class="success-message" id="successMessage">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Thank you! We'll notify you when we launch.</span>
+                                </div>
+                            </form>
+                            
+                            <div class="features">
+                                <div class="feature">
+                                    <i class="fas fa-gift"></i>
+                                    <span>Exclusive Launch Offers</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-bell"></i>
+                                    <span>Early Access</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-shield-alt"></i>
+                                    <span>No Spam, Unsubscribe Anytime</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2>About Crumble Bakery</h2>
+                    <p>
+                        Founded with a passion for creating exceptional baked goods, Crumble Bakery 
+                        is dedicated to bringing you the finest artisanal treats. Our skilled bakers 
+                        use traditional techniques combined with modern flavors to create memorable 
+                        experiences with every bite.
+                    </p>
+                    
+                    <div class="values">
+                        <div class="value-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Natural Ingredients</h3>
+                            <p>We source only the highest quality, natural ingredients for all our products.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-heart"></i>
+                            <h3>Made with Love</h3>
+                            <p>Every item is crafted by hand with care, passion, and attention to detail.</p>
+                        </div>
+                        <div class="value-item">
+                            <i class="fas fa-clock"></i>
+                            <h3>Fresh Daily</h3>
+                            <p>All our products are baked fresh daily to ensure the best taste and quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="logo">
+                            <i class="fas fa-cookie-bite"></i>
+                            <span>Crumble Bakery</span>
+                        </div>
+                        <p>Artisanal baked goods crafted with love.</p>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Connect With Us</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:info@crumblebakery.com" class="social-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> info@crumblebakery.com</p>
+                            <p><i class="fas fa-phone"></i> Coming Soon</p>
+                            <p><i class="fas fa-map-marker-alt"></i> Location TBA</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Crumble Bakery. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/form-validation.js"></script>
+</body>
+</html>
