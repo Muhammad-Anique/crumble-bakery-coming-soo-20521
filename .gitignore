@@ -1,0 +1,87 @@
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Node.js (if adding build tools later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build Output
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+
+# Backup Files
+*.bak
+*.backup
+
+# Image Optimization Cache
+.next/
+.nuxt/
+
+# CSS Preprocessor Cache
+.sass-cache/
+*.css.map
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.tgz
+*.tar.gz
+.eslintcache
+
+# Local Configuration
+config/local.json
+local.config.js
+
+# Email Collection Data (if storing locally during development)
+emails.json
+subscribers.txt
+
+# Design Assets (working files)
+design/
+*.psd
+*.ai
+*.fig
+*.sketch
+
+# Documentation drafts
+docs/drafts/
+NOTES.md
